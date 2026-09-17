@@ -1,0 +1,644 @@
+{
+    "name": "test",
+    "filename": "test.dsp",
+    "version": "2.79.3",
+    "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2",
+    "library_list": [
+        "/usr/share/faust/stdfaust.lib",
+        "/usr/share/faust/signals.lib",
+        "/usr/share/faust/maths.lib",
+        "/usr/share/faust/platform.lib",
+        "/usr/share/faust/oscillators.lib",
+        "/usr/share/faust/basics.lib",
+        "/usr/share/faust/filters.lib",
+        "/usr/share/faust/envelopes.lib",
+        "/usr/share/faust/reverbs.lib",
+        "/usr/share/faust/delays.lib",
+        "/usr/share/faust/routes.lib"
+    ],
+    "include_pathnames": [
+        "/share/faust",
+        "/usr/local/share/faust",
+        "/usr/share/faust",
+        "."
+    ],
+    "size": 975820,
+    "inputs": 0,
+    "outputs": 2,
+    "meta": [
+        {
+            "basics.lib/name": "Faust Basic Element Library"
+        },
+        {
+            "basics.lib/version": "1.21.0"
+        },
+        {
+            "compile_options": "-lang wasm-i -ct 1 -es 1 -mcd 16 -mdd 1024 -mdy 33 -single -ftz 2"
+        },
+        {
+            "delays.lib/name": "Faust Delay Library"
+        },
+        {
+            "delays.lib/version": "1.1.0"
+        },
+        {
+            "envelopes.lib/adsr:author": "Yann Orlarey and Andrey Bundin"
+        },
+        {
+            "envelopes.lib/author": "GRAME"
+        },
+        {
+            "envelopes.lib/copyright": "GRAME"
+        },
+        {
+            "envelopes.lib/license": "LGPL with exception"
+        },
+        {
+            "envelopes.lib/name": "Faust Envelope Library"
+        },
+        {
+            "envelopes.lib/version": "1.3.0"
+        },
+        {
+            "filename": "test.dsp"
+        },
+        {
+            "filters.lib/allpass_comb:author": "Julius O. Smith III"
+        },
+        {
+            "filters.lib/allpass_comb:copyright": "Copyright (C) 2003-2019 by Julius O. Smith III <jos@ccrma.stanford.edu>"
+        },
+        {
+            "filters.lib/allpass_comb:license": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/lowpass0_highpass1": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/name": "Faust Filters Library"
+        },
+        {
+            "filters.lib/svf:author": "Oleg Nesterov"
+        },
+        {
+            "filters.lib/svf:copyright": "Copyright (C) 2020 Oleg Nesterov <oleg@redhat.com>"
+        },
+        {
+            "filters.lib/svf:license": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/svf_morph:author": "David Braun and Clarence W. Rowley"
+        },
+        {
+            "filters.lib/svf_morph:copyright": "Copyright (C) 2024 David Braun <braun@ccrma.stanford.edu>"
+        },
+        {
+            "filters.lib/svf_morph:license": "MIT-style STK-4.3 license"
+        },
+        {
+            "filters.lib/version": "1.7.1"
+        },
+        {
+            "maths.lib/author": "GRAME"
+        },
+        {
+            "maths.lib/copyright": "GRAME"
+        },
+        {
+            "maths.lib/license": "LGPL with exception"
+        },
+        {
+            "maths.lib/name": "Faust Math Library"
+        },
+        {
+            "maths.lib/version": "2.8.1"
+        },
+        {
+            "name": "test"
+        },
+        {
+            "oscillators.lib/lf_sawpos:author": "Bart Brouns, revised by Stéphane Letz"
+        },
+        {
+            "oscillators.lib/lf_sawpos:licence": "STK-4.3"
+        },
+        {
+            "oscillators.lib/name": "Faust Oscillator Library"
+        },
+        {
+            "oscillators.lib/saw2ptr:author": "Julius O. Smith III"
+        },
+        {
+            "oscillators.lib/saw2ptr:license": "STK-4.3"
+        },
+        {
+            "oscillators.lib/sawN:author": "Julius O. Smith III"
+        },
+        {
+            "oscillators.lib/sawN:license": "STK-4.3"
+        },
+        {
+            "oscillators.lib/version": "1.6.0"
+        },
+        {
+            "platform.lib/name": "Generic Platform Library"
+        },
+        {
+            "platform.lib/version": "1.3.0"
+        },
+        {
+            "reverbs.lib/mono_freeverb:author": "Romain Michon"
+        },
+        {
+            "reverbs.lib/name": "Faust Reverb Library"
+        },
+        {
+            "reverbs.lib/stereo_freeverb:author": "Romain Michon"
+        },
+        {
+            "reverbs.lib/version": "1.4.0"
+        },
+        {
+            "routes.lib/name": "Faust Signal Routing Library"
+        },
+        {
+            "routes.lib/version": "1.2.0"
+        },
+        {
+            "signals.lib/name": "Faust Signal Routing Library"
+        },
+        {
+            "signals.lib/version": "1.6.0"
+        }
+    ],
+    "ui": [
+        {
+            "type": "vgroup",
+            "label": "test",
+            "items": [
+                {
+                    "type": "vgroup",
+                    "label": "01_OSC 1",
+                    "items": [
+                        {
+                            "type": "hslider",
+                            "label": "duty",
+                            "varname": "fHslider6",
+                            "shortname": "01_OSC_1_duty",
+                            "address": "/test/01_OSC_1/duty",
+                            "index": 278660,
+                            "init": 0.5,
+                            "min": 0.01,
+                            "max": 0.99,
+                            "step": 0.01
+                        },
+                        {
+                            "type": "hslider",
+                            "label": "freq",
+                            "varname": "fHslider5",
+                            "shortname": "01_OSC_1_freq",
+                            "address": "/test/01_OSC_1/freq",
+                            "index": 262240,
+                            "meta": [
+                                {
+                                    "unit": "Hz"
+                                }
+                            ],
+                            "init": 220,
+                            "min": 50,
+                            "max": 2000,
+                            "step": 0.1
+                        },
+                        {
+                            "type": "checkbox",
+                            "label": "lfo",
+                            "varname": "fCheckbox2",
+                            "shortname": "01_OSC_1_lfo",
+                            "address": "/test/01_OSC_1/lfo",
+                            "index": 278656
+                        },
+                        {
+                            "type": "checkbox",
+                            "label": "pulse-saw",
+                            "varname": "fCheckbox1",
+                            "shortname": "01_OSC_1_pulse_saw",
+                            "address": "/test/01_OSC_1/pulse-saw",
+                            "index": 262228
+                        }
+                    ]
+                },
+                {
+                    "type": "vgroup",
+                    "label": "02_OSC 2",
+                    "items": [
+                        {
+                            "type": "hslider",
+                            "label": "duty",
+                            "varname": "fHslider19",
+                            "shortname": "02_OSC_2_duty",
+                            "address": "/test/02_OSC_2/duty",
+                            "index": 344452,
+                            "init": 0.5,
+                            "min": 0.01,
+                            "max": 0.99,
+                            "step": 0.01
+                        },
+                        {
+                            "type": "hslider",
+                            "label": "freq",
+                            "varname": "fHslider18",
+                            "shortname": "02_OSC_2_freq",
+                            "address": "/test/02_OSC_2/freq",
+                            "index": 328036,
+                            "meta": [
+                                {
+                                    "unit": "Hz"
+                                }
+                            ],
+                            "init": 330,
+                            "min": 50,
+                            "max": 2000,
+                            "step": 0.1
+                        },
+                        {
+                            "type": "checkbox",
+                            "label": "lfo",
+                            "varname": "fCheckbox8",
+                            "shortname": "02_OSC_2_lfo",
+                            "address": "/test/02_OSC_2/lfo",
+                            "index": 344448
+                        },
+                        {
+                            "type": "checkbox",
+                            "label": "pulse-saw",
+                            "varname": "fCheckbox7",
+                            "shortname": "02_OSC_2_pulse_saw",
+                            "address": "/test/02_OSC_2/pulse-saw",
+                            "index": 328032
+                        }
+                    ]
+                },
+                {
+                    "type": "vgroup",
+                    "label": "03_LFO",
+                    "items": [
+                        {
+                            "type": "hslider",
+                            "label": "depth",
+                            "varname": "fHslider7",
+                            "shortname": "03_LFO_depth",
+                            "address": "/test/03_LFO/depth",
+                            "index": 278672,
+                            "init": 0.2,
+                            "min": 0,
+                            "max": 0.49,
+                            "step": 0.01
+                        },
+                        {
+                            "type": "hslider",
+                            "label": "rate",
+                            "varname": "fHslider8",
+                            "shortname": "03_LFO_rate",
+                            "address": "/test/03_LFO/rate",
+                            "index": 278684,
+                            "meta": [
+                                {
+                                    "unit": "Hz"
+                                }
+                            ],
+                            "init": 1,
+                            "min": 0.1,
+                            "max": 20,
+                            "step": 0.1
+                        }
+                    ]
+                },
+                {
+                    "type": "vgroup",
+                    "label": "04_FILTER",
+                    "items": [
+                        {
+                            "type": "hslider",
+                            "label": "Q",
+                            "varname": "fHslider11",
+                            "shortname": "Q",
+                            "address": "/test/04_FILTER/Q",
+                            "index": 295152,
+                            "init": 1,
+                            "min": 0.1,
+                            "max": 10,
+                            "step": 0.01
+                        },
+                        {
+                            "type": "hslider",
+                            "label": "blend",
+                            "varname": "fHslider3",
+                            "shortname": "blend",
+                            "address": "/test/04_FILTER/blend",
+                            "index": 262204,
+                            "init": 0,
+                            "min": 0,
+                            "max": 2,
+                            "step": 0.01
+                        },
+                        {
+                            "type": "hslider",
+                            "label": "cutoff",
+                            "varname": "fHslider4",
+                            "shortname": "cutoff",
+                            "address": "/test/04_FILTER/cutoff",
+                            "index": 262212,
+                            "meta": [
+                                {
+                                    "unit": "Hz"
+                                }
+                            ],
+                            "init": 5000,
+                            "min": 100,
+                            "max": 18000,
+                            "step": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "vgroup",
+                    "label": "05_ENV",
+                    "items": [
+                        {
+                            "type": "hslider",
+                            "label": "attack",
+                            "varname": "fHslider12",
+                            "shortname": "attack",
+                            "address": "/test/05_ENV/attack",
+                            "index": 295180,
+                            "meta": [
+                                {
+                                    "unit": "s"
+                                }
+                            ],
+                            "init": 0.01,
+                            "min": 0.001,
+                            "max": 2,
+                            "step": 0.001
+                        },
+                        {
+                            "type": "hslider",
+                            "label": "decay",
+                            "varname": "fHslider14",
+                            "shortname": "decay",
+                            "address": "/test/05_ENV/decay",
+                            "index": 295208,
+                            "meta": [
+                                {
+                                    "unit": "s"
+                                }
+                            ],
+                            "init": 0.1,
+                            "min": 0.001,
+                            "max": 2,
+                            "step": 0.001
+                        },
+                        {
+                            "type": "checkbox",
+                            "label": "gate",
+                            "varname": "fCheckbox5",
+                            "shortname": "gate",
+                            "address": "/test/05_ENV/gate",
+                            "index": 295184
+                        },
+                        {
+                            "type": "hslider",
+                            "label": "release",
+                            "varname": "fHslider15",
+                            "shortname": "release",
+                            "address": "/test/05_ENV/release",
+                            "index": 295212,
+                            "meta": [
+                                {
+                                    "unit": "s"
+                                }
+                            ],
+                            "init": 0.5,
+                            "min": 0.001,
+                            "max": 5,
+                            "step": 0.001
+                        },
+                        {
+                            "type": "hslider",
+                            "label": "sustain",
+                            "varname": "fHslider13",
+                            "shortname": "sustain",
+                            "address": "/test/05_ENV/sustain",
+                            "index": 295204,
+                            "init": 0.8,
+                            "min": 0,
+                            "max": 1,
+                            "step": 0.01
+                        }
+                    ]
+                },
+                {
+                    "type": "vgroup",
+                    "label": "06_CHORUS",
+                    "items": [
+                        {
+                            "type": "hslider",
+                            "label": "depth",
+                            "varname": "fHslider16",
+                            "shortname": "06_CHORUS_depth",
+                            "address": "/test/06_CHORUS/depth",
+                            "index": 327996,
+                            "init": 0.5,
+                            "min": 0,
+                            "max": 1,
+                            "step": 0.01
+                        },
+                        {
+                            "type": "hslider",
+                            "label": "mix",
+                            "varname": "fHslider2",
+                            "shortname": "06_CHORUS_mix",
+                            "address": "/test/06_CHORUS/mix",
+                            "index": 262192,
+                            "init": 0.5,
+                            "min": 0,
+                            "max": 1,
+                            "step": 0.01
+                        },
+                        {
+                            "type": "hslider",
+                            "label": "rate",
+                            "varname": "fHslider17",
+                            "shortname": "06_CHORUS_rate",
+                            "address": "/test/06_CHORUS/rate",
+                            "index": 328008,
+                            "meta": [
+                                {
+                                    "unit": "Hz"
+                                }
+                            ],
+                            "init": 0.5,
+                            "min": 0.01,
+                            "max": 5,
+                            "step": 0.01
+                        }
+                    ]
+                },
+                {
+                    "type": "vgroup",
+                    "label": "07_REVERB",
+                    "items": [
+                        {
+                            "type": "hslider",
+                            "label": "mix",
+                            "varname": "fHslider1",
+                            "shortname": "07_REVERB_mix",
+                            "address": "/test/07_REVERB/mix",
+                            "index": 262180,
+                            "init": 0.2,
+                            "min": 0,
+                            "max": 1,
+                            "step": 0.01
+                        }
+                    ]
+                },
+                {
+                    "type": "vgroup",
+                    "label": "08_MASTER",
+                    "items": [
+                        {
+                            "type": "hslider",
+                            "label": "level",
+                            "varname": "fHslider0",
+                            "shortname": "level",
+                            "address": "/test/08_MASTER/level",
+                            "index": 262156,
+                            "init": 0.3,
+                            "min": 0,
+                            "max": 1,
+                            "step": 0.01
+                        }
+                    ]
+                },
+                {
+                    "type": "vgroup",
+                    "label": "09_OSC 3",
+                    "items": [
+                        {
+                            "type": "hslider",
+                            "label": "duty",
+                            "varname": "fHslider10",
+                            "shortname": "09_OSC_3_duty",
+                            "address": "/test/09_OSC_3/duty",
+                            "index": 295132,
+                            "init": 0.5,
+                            "min": 0.01,
+                            "max": 0.99,
+                            "step": 0.01
+                        },
+                        {
+                            "type": "hslider",
+                            "label": "freq",
+                            "varname": "fHslider9",
+                            "shortname": "09_OSC_3_freq",
+                            "address": "/test/09_OSC_3/freq",
+                            "index": 278716,
+                            "meta": [
+                                {
+                                    "unit": "Hz"
+                                }
+                            ],
+                            "init": 220,
+                            "min": 50,
+                            "max": 2000,
+                            "step": 0.1
+                        },
+                        {
+                            "type": "checkbox",
+                            "label": "lfo",
+                            "varname": "fCheckbox4",
+                            "shortname": "09_OSC_3_lfo",
+                            "address": "/test/09_OSC_3/lfo",
+                            "index": 295128
+                        },
+                        {
+                            "type": "checkbox",
+                            "label": "override",
+                            "varname": "fCheckbox0",
+                            "shortname": "09_OSC_3_override",
+                            "address": "/test/09_OSC_3/override",
+                            "index": 262224
+                        },
+                        {
+                            "type": "checkbox",
+                            "label": "pulse-saw",
+                            "varname": "fCheckbox3",
+                            "shortname": "09_OSC_3_pulse_saw",
+                            "address": "/test/09_OSC_3/pulse-saw",
+                            "index": 278712
+                        }
+                    ]
+                },
+                {
+                    "type": "vgroup",
+                    "label": "10_OSC 4",
+                    "items": [
+                        {
+                            "type": "hslider",
+                            "label": "duty",
+                            "varname": "fHslider21",
+                            "shortname": "10_OSC_4_duty",
+                            "address": "/test/10_OSC_4/duty",
+                            "index": 360892,
+                            "init": 0.5,
+                            "min": 0.01,
+                            "max": 0.99,
+                            "step": 0.01
+                        },
+                        {
+                            "type": "hslider",
+                            "label": "freq",
+                            "varname": "fHslider20",
+                            "shortname": "10_OSC_4_freq",
+                            "address": "/test/10_OSC_4/freq",
+                            "index": 344476,
+                            "meta": [
+                                {
+                                    "unit": "Hz"
+                                }
+                            ],
+                            "init": 220,
+                            "min": 50,
+                            "max": 2000,
+                            "step": 0.1
+                        },
+                        {
+                            "type": "checkbox",
+                            "label": "lfo",
+                            "varname": "fCheckbox10",
+                            "shortname": "10_OSC_4_lfo",
+                            "address": "/test/10_OSC_4/lfo",
+                            "index": 360888
+                        },
+                        {
+                            "type": "checkbox",
+                            "label": "override",
+                            "varname": "fCheckbox6",
+                            "shortname": "10_OSC_4_override",
+                            "address": "/test/10_OSC_4/override",
+                            "index": 328028
+                        },
+                        {
+                            "type": "checkbox",
+                            "label": "pulse-saw",
+                            "varname": "fCheckbox9",
+                            "shortname": "10_OSC_4_pulse_saw",
+                            "address": "/test/10_OSC_4/pulse-saw",
+                            "index": 344472
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
